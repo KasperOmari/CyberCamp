@@ -13,6 +13,7 @@ git clone https://github.com/KasperOmari/CyberCamp.git
 3. [**turtle_shapes.py**](/fun-projects/turtle_shapes.py): Draw shapes with Turtle Graphics.
 4. [**fun_facts.py**](/fun-projects/fun_facts.py): Learn random fun facts.
 5. [**chatbot.py**](/fun-projects/chatbot.py): Chat with a simple chatbot.
+6. [**snake.py**](/fun-projects/snake.py): Play with a simple snake game.
 
 ## Challenges
 [**setup_challenges.sh**](/challenges/setup_challenges.sh) script would automatically create a directory for each session that contains all of its challenges.
