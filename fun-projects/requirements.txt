@@ -1,0 +1,4 @@
+colorama==0.4.6      # For colorful terminal output (e.g., Snake Game)
+random==1.0.1        # For random number generation (used in fun_facts.py and magic_number_game.py)
+pyfiglet==0.8.post1  # For ASCII art (optional fun enhancement for hello_world.py or chatbot.py)
+turtle==1.1.0        # For drawing shapes in turtle_shapes.py
