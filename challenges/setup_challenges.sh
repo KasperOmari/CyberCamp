@@ -27,9 +27,9 @@ echo "Congrats! You found the hidden file!" > $SESSION2_DIR/hidden_file_hunt/fol
 # Organize the Chaos
 ORGANIZE_DIR=$SESSION2_DIR/organize_the_chaos
 mkdir -p $ORGANIZE_DIR
-for i in {1..10}; do echo "Text file $i" > $ORGANIZE_DIR/file$i.txt; done
-for i in {1..5}; do echo "Image file $i" > $ORGANIZE_DIR/image$i.jpg; done
-for i in {1..3}; do echo "PDF file $i" > $ORGANIZE_DIR/document$i.pdf; done
+for i in $(seq 1 10); do echo "Text file $i" > $ORGANIZE_DIR/file$i.txt; done
+for i in $(seq 1 5); do echo "Image file $i" > $ORGANIZE_DIR/image$i.jpg; done
+for i in $(seq 1 3); do echo "PDF file $i" > $ORGANIZE_DIR/document$i.pdf; done
 
 # File Security Puzzle
 SECURITY_DIR=$SESSION2_DIR/file_security_puzzle
@@ -48,7 +48,7 @@ SESSION3_DIR=$CHALLENGES_DIR/session3
 
 # Mini-Challenge: Build Your Project Folder
 PROJECT_DIR=$SESSION3_DIR/project_folder
-mkdir -p $PROJECT_DIR/assignments $PROJECT_DIR/notes $PROJECT_DIR/resources $PROJECT_DIR/submissions
+mkdir -p $PROJECT_DIR/{assignments $PROJECT_DIR/notes $PROJECT_DIR/resources $PROJECT_DIR/submissions
 echo "Assignment 1 content" > $PROJECT_DIR/assignments/assignment1.txt
 echo "Class notes" > $PROJECT_DIR/notes/class_notes.txt
 echo "Research material" > $PROJECT_DIR/resources/research_material.pdf
@@ -57,8 +57,8 @@ touch $PROJECT_DIR/submissions/.gitignore
 # Pre-created files for Advanced Commands section
 BIG_FILES_DIR=$SESSION3_DIR/big_files
 mkdir -p $BIG_FILES_DIR
-echo "This is line 1" > $BIG_FILES_DIR/largefile.txt
-for i in {2..100}; do echo "This is line $i" >> $BIG_FILES_DIR/largefile.txt; done
+touch $BIG_FILES_DIR/largefile.txt
+for i in $(seq 1 100); do echo "This is line $i" >> $BIG_FILES_DIR/largefile.txt; done
 
 # File Hunt
 HUNT_DIR=$SESSION3_DIR/file_hunt
