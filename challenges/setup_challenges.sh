@@ -103,6 +103,7 @@ echo "Identify devices on the network and map them to their owners." > $WHO_NETW
 # --- Session 6 Challenges ---
 echo "Setting up Session 6 challenges..."
 SESSION6_DIR=$CHALLENGES_DIR/session6_pwnagotchi
+mkdir -p $SESSION6_DIR
 # Wireshark Analysis
 echo "Creating sample pcap file for Wireshark analysis..."
 sudo apt-get update && sudo apt-get install -y tcpdump curl
