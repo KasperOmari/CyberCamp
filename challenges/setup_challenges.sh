@@ -48,7 +48,7 @@ SESSION3_DIR=$CHALLENGES_DIR/session3
 
 # Mini-Challenge: Build Your Project Folder
 PROJECT_DIR=$SESSION3_DIR/project_folder
-mkdir -p $PROJECT_DIR/{assignments,notes,resources,submissions}
+mkdir -p $PROJECT_DIR/assignments $PROJECT_DIR/notes $PROJECT_DIR/resources $PROJECT_DIR/submissions
 echo "Assignment 1 content" > $PROJECT_DIR/assignments/assignment1.txt
 echo "Class notes" > $PROJECT_DIR/notes/class_notes.txt
 echo "Research material" > $PROJECT_DIR/resources/research_material.pdf
@@ -62,7 +62,8 @@ for i in {2..100}; do echo "This is line $i" >> $BIG_FILES_DIR/largefile.txt; do
 
 # File Hunt
 HUNT_DIR=$SESSION3_DIR/file_hunt
-mkdir -p $HUNT_DIR/{docs,reports,backups}
+mkdir -p $HUNT_DIR/docs $HUNT_DIR/reports $HUNT_DIR/backups
+
 echo "Confidential report" > $HUNT_DIR/reports/secret_report.txt
 echo "Backup file 1" > $HUNT_DIR/backups/.hidden_backup1.txt
 echo "Important passwords" > $HUNT_DIR/docs/passwords.txt
