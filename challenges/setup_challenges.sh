@@ -54,6 +54,12 @@ echo "Class notes" > $PROJECT_DIR/notes/class_notes.txt
 echo "Research material" > $PROJECT_DIR/resources/research_material.pdf
 touch $PROJECT_DIR/submissions/.gitignore
 
+# Pre-created files for Advanced Commands section
+BIG_FILES_DIR=$SESSION3_DIR/big_files
+mkdir -p $BIG_FILES_DIR
+echo "This is line 1" > $BIG_FILES_DIR/largefile.txt
+for i in {2..100}; do echo "This is line $i" >> $BIG_FILES_DIR/largefile.txt; done
+
 # File Hunt
 HUNT_DIR=$SESSION3_DIR/file_hunt
 mkdir -p $HUNT_DIR/{docs,reports,backups}
@@ -93,6 +99,17 @@ echo "Correct password: password" > $CYBERSEC_DIR/target.txt
 WHO_NETWORK_DIR=$SESSION4_DIR/whos_on_network
 mkdir -p $WHO_NETWORK_DIR
 echo "Identify devices on the network and map them to their owners." > $WHO_NETWORK_DIR/instructions.txt
+
+# --- Session 6 Challenges ---
+echo "Setting up Session 6 challenges..."
+SESSION6_DIR=$CHALLENGES_DIR/session6_pwnagotchi
+# Wireshark Analysis
+echo "Creating sample pcap file for Wireshark analysis..."
+sudo apt-get update && sudo apt-get install -y tcpdump curl
+tcpdump -i lo -w $SESSION6_DIR/sample.pcap "tcp port 80" > /dev/null 2>&1 &
+sleep 2
+curl "http://example.com/login?user=admin&pass=password123" > /dev/null 2>&1
+pkill tcpdump
 
 # --- Finalizing ---
 echo "All challenges set up under: $CHALLENGES_DIR"
