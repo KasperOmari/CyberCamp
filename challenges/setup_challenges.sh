@@ -48,7 +48,7 @@ SESSION3_DIR=$CHALLENGES_DIR/session3
 
 # Mini-Challenge: Build Your Project Folder
 PROJECT_DIR=$SESSION3_DIR/project_folder
-mkdir -p $PROJECT_DIR/{assignments $PROJECT_DIR/notes $PROJECT_DIR/resources $PROJECT_DIR/submissions
+mkdir -p $PROJECT_DIR/assignments $PROJECT_DIR/notes $PROJECT_DIR/resources $PROJECT_DIR/submissions
 echo "Assignment 1 content" > $PROJECT_DIR/assignments/assignment1.txt
 echo "Class notes" > $PROJECT_DIR/notes/class_notes.txt
 echo "Research material" > $PROJECT_DIR/resources/research_material.pdf
