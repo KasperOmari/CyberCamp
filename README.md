@@ -1,6 +1,12 @@
 # CyberCamp Challenges and Fun Projects
 
-Welcome to the fun projects repository! Here, you'll find simple Python scripts to explore and play with on your Raspberry Pi.
+Welcome to **CyberCamp's** Git repository on GitHub!
+Here, you'll find a script that sets up the challenges for each session of the course, some fun simple projects to explore and play with on your Raspberry Pi, instructions, and more!
+
+## How to run challenges setup script
+```
+curl -L https://raw.githubusercontent.com/KasperOmari/CyberCamp/refs/heads/main/challenges/setup_challenges.sh | bash
+```
 
 ## How to Clone:
 ```
