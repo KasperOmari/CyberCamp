@@ -14,31 +14,31 @@ SESSION1_DIR=$CHALLENGES_DIR/session1
 mkdir -p $SESSION1_DIR/file_finder_race/folder1/folder2
 
 # File Finder Race
-echo "You found the treasure!" > $SESSION1_DIR/file_finder_race/folder1/folder2/hidden.txt
+echo "You found the treasure!" > $SESSION1_DIR/1_file_finder_race/folder1/folder2/hidden.txt
 
 # --- Session 2 Challenges ---
 echo "Setting up Session 2 challenges..."
 SESSION2_DIR=$CHALLENGES_DIR/session2
 
 # Hidden File Hunt
-mkdir -p $SESSION2_DIR/hidden_file_hunt/folder1/folder2
-echo "Congrats! You found the hidden file!" > $SESSION2_DIR/hidden_file_hunt/folder1/folder2/.hidden.txt
+mkdir -p $SESSION2_DIR/1_hidden_file_hunt/folder1/folder2
+echo "Congrats! You found the hidden file!" > $SESSION2_DIR/1_hidden_file_hunt/folder1/folder2/.hidden.txt
 
 # Organize the Chaos
-ORGANIZE_DIR=$SESSION2_DIR/organize_the_chaos
+ORGANIZE_DIR=$SESSION2_DIR/2_organize_the_chaos
 mkdir -p $ORGANIZE_DIR
 for i in $(seq 1 10); do echo "Text file $i" > $ORGANIZE_DIR/file$i.txt; done
 for i in $(seq 1 5); do echo "Image file $i" > $ORGANIZE_DIR/image$i.jpg; done
 for i in $(seq 1 3); do echo "PDF file $i" > $ORGANIZE_DIR/document$i.pdf; done
 
 # File Security Puzzle
-SECURITY_DIR=$SESSION2_DIR/file_security_puzzle
+SECURITY_DIR=$SESSION2_DIR/3_file_security_puzzle
 mkdir -p $SECURITY_DIR
 echo "Top secret message!" > $SECURITY_DIR/secret.txt
 chmod 600 $SECURITY_DIR/secret.txt
 
 # Secret Message Decoder
-DECODER_DIR=$SESSION2_DIR/secret_message_decoder
+DECODER_DIR=$SESSION2_DIR/4_secret_message_decoder
 mkdir -p $DECODER_DIR
 echo "Decode this: VGhlIHBhc3N3b3JkIGlzIDEyMzQ=" > $DECODER_DIR/message_to_decode.txt
 
@@ -47,7 +47,7 @@ echo "Setting up Session 3 challenges..."
 SESSION3_DIR=$CHALLENGES_DIR/session3
 
 # Mini-Challenge: Build Your Project Folder
-PROJECT_DIR=$SESSION3_DIR/project_folder
+PROJECT_DIR=$SESSION3_DIR/1_project_folder
 mkdir -p $PROJECT_DIR/assignments $PROJECT_DIR/notes $PROJECT_DIR/resources $PROJECT_DIR/submissions
 echo "Assignment 1 content" > $PROJECT_DIR/assignments/assignment1.txt
 echo "Class notes" > $PROJECT_DIR/notes/class_notes.txt
@@ -55,13 +55,13 @@ echo "Research material" > $PROJECT_DIR/resources/research_material.pdf
 touch $PROJECT_DIR/submissions/.gitignore
 
 # Pre-created files for Advanced Commands section
-BIG_FILES_DIR=$SESSION3_DIR/big_files
+BIG_FILES_DIR=$SESSION3_DIR/2_big_files
 mkdir -p $BIG_FILES_DIR
 touch $BIG_FILES_DIR/largefile.txt
 for i in $(seq 1 100); do echo "This is line $i" >> $BIG_FILES_DIR/largefile.txt; done
 
 # File Hunt
-HUNT_DIR=$SESSION3_DIR/file_hunt
+HUNT_DIR=$SESSION3_DIR/3_file_hunt
 mkdir -p $HUNT_DIR/docs $HUNT_DIR/reports $HUNT_DIR/backups
 
 echo "Confidential report" > $HUNT_DIR/reports/secret_report.txt
@@ -69,7 +69,7 @@ echo "Backup file 1" > $HUNT_DIR/backups/.hidden_backup1.txt
 echo "Important passwords" > $HUNT_DIR/docs/passwords.txt
 
 # User & Group Management Challenge
-USER_GROUP_DIR=$SESSION3_DIR/user_group_management
+USER_GROUP_DIR=$SESSION3_DIR/4_user_group_management
 mkdir -p $USER_GROUP_DIR
 echo "Confidential data for a new user" > $USER_GROUP_DIR/confidential.txt
 chmod 600 $USER_GROUP_DIR/confidential.txt
