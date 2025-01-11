@@ -21,5 +21,8 @@ git clone https://github.com/KasperOmari/CyberCamp.git
 5. [**chatbot.py**](/fun-projects/chatbot.py): Chat with a simple chatbot.
 6. [**snake.py**](/fun-projects/snake.py): Play with a simple snake game.
 
-## Challenges
+## Course Challenges Setup
 [**setup_challenges.sh**](/challenges/setup_challenges.sh) script would automatically create a directory for each session that contains all of its challenges.
+
+## Other resources
+Refer to the [resources](/resources/README.md) for more resources that can help you proceed byond just this course with your learning journey! 
