@@ -25,6 +25,9 @@ git clone https://github.com/KasperOmari/CyberCamp.git
 [**setup_challenges.sh**](/challenges/setup_challenges.sh) script would automatically create a directory for each session that contains all of its challenges.
 
 
+## Plex Media Server
+To install Plex media server on your raspberry pi 4+ follow the instructions [here](https://www.makeuseof.com/tag/raspberry-pi-plex-media-server/).
+
 ## Pwnagotchi
 Below are the steps to setup pwnagotchi on your Raspberry Pi and connect to it from your PC.
 
